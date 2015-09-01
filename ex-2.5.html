@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <title>ex-2.5:layout side drawer</title>
+    <link rel="stylesheet" href="lib/material.min.css">
+    <script src="lib/material.min.js"></script>
+	<link rel="stylesheet" href="lib/icon.css">
+	<style>
+		div.container{padding:10px;}
+	</style>
+</head>
+<body>
+    <!-- No header, and the drawer stays open on larger screens (fixed drawer). -->
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-drawer
+                mdl-layout--overlay-drawer-button">
+      <div class="mdl-layout__drawer">
+        <span class="mdl-layout-title">Title</span>
+
+      </div>
+      <main class="mdl-layout__content">
+        <div class="page-content"><!-- Your content goes here --></div>
+      </main>
+    </div>
+</body>
+</html>

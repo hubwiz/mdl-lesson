@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <title>ex-4.4:menus</title>
+    <link rel="stylesheet" href="lib/material.min.css">
+    <script src="lib/material.min.js"></script>
+    <link rel="stylesheet" href="lib/icon.css">
+	<style>
+		button{position:absolute!important;}
+		button#left-top-btn{left:40px;top:40px;}
+		button#right-top-btn{right:40px;top:40px;}
+		button#left-bottom-btn{left:40px;bottom:40px;}
+		button#right-bottom-btn{right:40px;bottom:40px;}
+	</style>
+</head>
+<body>
+<div class="container">
+    <!-- Left aligned menu below button -->
+    <button id="left-top-btn"
+            class="mdl-button mdl-js-button mdl-button--icon mdl-button--fab mdl-button--colored">
+       <i class="material-icons">more_vert</i>
+    </button>
+
+    <ul class="mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect"
+        for="left-top-btn">
+      <li class="mdl-menu__item">Some Action</li>
+      <li class="mdl-menu__item">Another Action</li>
+      <li disabled class="mdl-menu__item">Disabled Action</li>
+      <li class="mdl-menu__item">Yet Another Action</li>
+    </ul>
+
+    <button id="right-top-btn"
+            class="mdl-button mdl-js-button mdl-button--icon mdl-button--fab mdl-button--colored">
+       <i class="material-icons">more_vert</i>
+    </button>
+    <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect"
+        for="right-top-btn">
+      <li class="mdl-menu__item">Some Action</li>
+      <li class="mdl-menu__item">Another Action</li>
+      <li disabled class="mdl-menu__item">Disabled Action</li>
+      <li class="mdl-menu__item">Yet Another Action</li>
+    </ul>
+
+    <button id="left-bottom-btn"
+            class="mdl-button mdl-js-button mdl-button--icon mdl-button--fab mdl-button--primary">
+       <i class="material-icons">more_vert</i>
+    </button>
+
+    <button id="right-bottom-btn"
+            class="mdl-button mdl-js-button mdl-button--icon mdl-button--fab mdl-button--primary">
+       <i class="material-icons">more_vert</i>
+    </button>
+
+</div>
+</body>
+</html>

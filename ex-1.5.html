@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <title>ex-1.5:font icon</title>
+    <link rel="stylesheet" href="lib/material.min.css">
+    <script src="lib/material.min.js"></script>
+	<link rel="stylesheet" href="lib/icon.css">
+	<style>
+		i{padding:5px;}
+		i:hover{background:#ccc;}
+	</style>
+</head>
+<body>
+	<div class="holder"></div>
+	<script>
+		window.onload = function(){
+			var holder = document.querySelector("div.holder");
+			for(var k in fontIcons){
+				var iconCanvas = document.createElement("div");  
+				var title = document.createElement("h4");
+				title.textContent = k;
+				iconCanvas.appendChild(title);
+				fontIcons[k].forEach(function(n){
+					var e = document.createElement("i");
+					e.textContent = n;
+					e.className = "material-icons";
+					e.title = n;
+					iconCanvas.appendChild(e);
+				})
+				holder.appendChild(iconCanvas);
+			}
+		}
+
+		var fontIcons = {
+			Content: ["add","add_box","add_circle","add_circle_outline",
+					"archive","backspace","block","clear","content_copy",
+					"content_cut","content_paste","create",
+					"drafts","filter_list","flag","font_download","forward",
+					"gesture","inbox","link","mail","markunread","redo",
+					"remove","remove_circle","remove_circle_outline",
+					"reply","reply_all","report","save","select_all","send",
+					"sort","text_format","undo"],
+			Social:["cake","domain","group","group_add","location_city",
+					"mood","mood_bad","notifications","notifications_active",
+					"notifications_none","notifications_off","notifications_paused",
+					"pages","party_mode","people","people_outline","person",
+					"person_add","person_outline","plus_one","poll",
+					"public","school","share","whatshot"],
+			File:["attachment","cloud","cloud_circle","cloud_done",
+					"cloud_download","cloud_off","cloud_queue",
+					"cloud_upload","file_download","file_upload","folder",
+					"folder_open","folder_shared"]
+		}
+	</script>
+</body>
+</html>

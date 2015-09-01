@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <title>ex-4.2:tooltip</title>
+    <link rel="stylesheet" href="lib/material.min.css">
+    <script src="lib/material.min.js"></script>
+    <link rel="stylesheet" href="lib/icon.css">
+	<style>
+		div.container{padding:50px;}
+		span{margin:20px;}
+	</style>
+</head>
+<body>
+<div class="container">
+    <!-- Simple Tooltip -->
+    <span id="tt1" class="material-icons">settings</span>
+    <div class="mdl-tooltip" for="tt1">普通提示框</div>
+    <!-- Large Tooltip -->
+    <span id="tt2" class="material-icons">print</span>
+    <div class="mdl-tooltip mdl-tooltip--large" for="tt2">大字提示框</div>
+    <!-- Rich Tooltip -->
+    <span id="tt3" class="material-icons">cloud_upload</span>
+    <div class="mdl-tooltip" for="tt3">使用<i>HTML</i>的提示框</div>
+    <!-- Multiline Tooltip -->
+    <span id="tt4" class="icon material-icons">face</span>
+    <div class="mdl-tooltip" for="tt4">两行提示框<br>这是第2行</div>
+</div>
+</body>
+</html>

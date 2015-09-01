@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <title>ex-2.4:layout header tabs</title>
+    <link rel="stylesheet" href="lib/material.min.css">
+    <script src="lib/material.min.js"></script>
+	<link rel="stylesheet" href="lib/icon.css">
+	<style>
+		p{padding:5px;}
+	</style>
+</head>
+<body>
+    <!-- Always shows a header, even in smaller screens. -->
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+      <header class="mdl-layout__header mdl-layout__header--waterfall">
+        <!-- Top row, always visible -->
+        <div class="mdl-layout__header-row">
+          <!-- Title -->
+          <span class="mdl-layout-title">Title</span>
+          <div class="mdl-layout-spacer"></div>
+          <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable
+                      mdl-textfield--floating-label mdl-textfield--align-right">
+            <label class="mdl-button mdl-js-button mdl-button--icon"
+                   for="waterfall-exp">
+              <i class="material-icons">search</i>
+            </label>
+            <div class="mdl-textfield__expandable-holder">
+              <input class="mdl-textfield__input" type="text" name="sample"
+                     id="waterfall-exp" />
+            </div>
+          </div>
+        </div>
+        <!-- Tabs -->
+        <div class="mdl-layout__tab-bar mdl-js-ripple-effect">
+            <a href="#scroll-tab-1" class="mdl-layout__tab is-active">Tab 1</a>
+            <a href="#scroll-tab-2" class="mdl-layout__tab">Tab 2</a>
+            <a href="#scroll-tab-3" class="mdl-layout__tab">Tab 3</a>
+            <a href="#scroll-tab-4" class="mdl-layout__tab">Tab 4</a>
+            <a href="#scroll-tab-5" class="mdl-layout__tab">Tab 5</a>
+            <a href="#scroll-tab-6" class="mdl-layout__tab">Tab 6</a>
+        </div>
+      </header>
+      <div class="mdl-layout__drawer">
+      </div>
+      <main class="mdl-layout__content">
+      		<div class="mdl-layout__tab-panel is-active" id="scroll-tab-1">
+              <p>
+      Material design is guided by print-based design elements—such as typography, grids, space, scale, color, and imagery—to create hierarchy, meaning, and focus that immerse the user in the experience. Material design adopts tools from the field of print design, like baseline grids and structural templates, encouraging consistency across environments by repeating visual elements, structural grids, and spacing across platforms and screen sizes. These layouts scale to fit any screen size, which simplifies the process of creating scalable apps.         </p>
+              <p>
+      In material design, the physical properties of paper are translated to the screen. The background of an application resembles the flat, opaque texture of a sheet of paper.
+      An application’s behavior mimics the paper’s ability to be re-sized, shuffled, and bound together in multiple sheets. Elements that live outside of applications, such as status or system bars, receive a different treatment. They are separate from the app content beneath them, and do not carry the physical properties of paper.
+      For detailed information about material, see Material Properties.
+              </p>
+              <p>
+      A floating action button is a circular sheet separate from a toolbar. It represents a single promoted action.
+      It can straddle a step if it relates to the content creating that step.
+              </p>
+        	</div>
+            <div class="mdl-layout__tab-panel" id="scroll-tab-2">
+            	<p>tab-2</p>
+            </div>
+      </main>
+    </div>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <title>ex-2.2:layout header</title>
+    <link rel="stylesheet" href="lib/material.min.css">
+    <script src="lib/material.min.js"></script>
+	<link rel="stylesheet" href="lib/icon.css">
+	<style>
+		.pseudo-paragraph{min-height:400px;}
+	</style>
+</head>
+<body>
+	<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+    	<header class="mdl-layout__header">
+        	<div class="mdl-layout__header-row">
+            	<span class="mdl-layout-title">title</span>
+                <div class="mdl-layout-spacer"></div>
+                <span class="material-icons">mail link report</span>
+            </div>
+        </header>
+        <div class="mdl-layout__drawer"></div>
+        <main class="mdl-layout__content">
+        	<p class="pseudo-paragraph"></p>
+        </main>
+    </div>
+</body>
+</html>

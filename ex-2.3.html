@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <title>ex-2.3:layout header navigation</title>
+    <link rel="stylesheet" href="lib/material.min.css">
+    <script src="lib/material.min.js"></script>
+	<link rel="stylesheet" href="lib/icon.css">
+    <!-- Uses a transparent header that draws on top of the layout's background -->
+    <style>
+		.layout-transparent {
+		  background: url('img/transparent.jpg') center / cover;
+		}
+		.layout-transparent .mdl-layout__header,
+		.layout-transparent .mdl-layout__drawer-button {
+		  color: white;
+		}
+		div.container{padding:10px;}
+    </style>
+</head>
+<body>
+    <div class="layout-transparent mdl-layout mdl-js-layout mdl-layout--fixed-header">
+      <header class="mdl-layout__header mdl-layout__header--transparent">
+        <div class="mdl-layout__header-row">
+          <!-- Title -->
+          <span class="mdl-layout-title">Title</span>
+          <!-- Add spacer, to align navigation to the right -->
+          <div class="mdl-layout-spacer"></div>
+          <!-- Navigation -->
+          <nav class="mdl-navigation">
+            <a class="mdl-navigation__link" href="">Link</a>
+            <a class="mdl-navigation__link" href="">Link</a>
+            <a class="mdl-navigation__link" href="">Link</a>
+            <a class="mdl-navigation__link" href="">Link</a>
+          </nav>
+        </div>
+      </header>
+      <div class="mdl-layout__drawer">
+      </div>
+      <main class="mdl-layout__content">
+      </main>
+    </div>
+</body>
+</html>

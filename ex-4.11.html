@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <title>ex-4.11:text field</title>
+    <link rel="stylesheet" href="lib/material.min.css">
+    <script src="lib/material.min.js"></script>
+    <link rel="stylesheet" href="lib/icon.css">
+	<style>
+		div.container{padding:10px;}
+	</style>
+</head>
+<body>
+<div class="container">
+    <!-- Simple Textfield -->
+    <form action="#">
+      <div class="mdl-textfield mdl-js-textfield textfield-demo">
+        <input class="mdl-textfield__input" type="text" id="sample1" />
+        <label class="mdl-textfield__label" for="sample1">Text...</label>
+      </div>
+    </form>
+    <!-- Numeric Textfield -->
+    <form action="#">
+      <div class="mdl-textfield mdl-js-textfield textfield-demo">
+        <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="sample2" />
+        <label class="mdl-textfield__label" for="sample2">Number...</label>
+        <span class="mdl-textfield__error">Input is not a number!</span>
+      </div>
+    </form>
+    <!-- Floating Multiline Textfield -->
+    <form action="#">
+      <div class="mdl-textfield mdl-js-textfield textfield-demo">
+        <textarea class="mdl-textfield__input" type="text" rows= "3" id="sample5" ></textarea>
+        <label class="mdl-textfield__label" for="sample5">Text lines...</label>
+      </div>
+    </form>
+</div>
+</body>
+</html>
